@@ -1,14 +1,15 @@
 "use strict";
 
-
+//Conversor de Temperatura
 function calcular() {
     var resultado;
-    var original= document.getElementById("datos");
+    //Expresion regular
     var expresion= /[-+]?[0-9]+((.)([0-9]*))?\s*?[CcFf]$/;
-    
+    //Si no coincide salta un mensaje
     if (document.getElementById("datos").value.search(expresion)==-1) {
             alert("Por favor, introduzca un valor válido! \n Ejemplo: 50C o 50F");
         }
+    //En caso contrario Calcula la conversion
     else{
         var numero=parseFloat(document.getElementById("datos").value);
         var tipo= document.getElementById("datos").value.slice(-1);
