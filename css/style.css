@@ -1,0 +1,39 @@
+body{
+    background-color: hsla(120,100%,50%,0.3);
+    font-family: arial;
+}
+
+#datos,#resul{
+    border: 1px solid#006;
+    background: #ffc;
+}
+
+#ex{
+    font-family: sans-serif;
+    color: blue;
+    font-size: medium;
+    text-decoration: underline;
+}
+
+span{
+    margin-left: 300px;
+    font-weight: bold;
+    border-image: initial;
+    border: 1px solid blue;
+    
+}
+#esquema{
+    margin-left: 100px;
+}
+footer{
+        position: absolute;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	height: 7%;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	padding: 3px;
+	text-align: center;
+	overflow: hidden;
+}

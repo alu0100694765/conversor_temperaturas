@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html lang="span">
+    <head>
+        <title>Conversor de Temperaturas</title>
+        <link type="text/css" rel="stylesheet" href="css/style.css" />
+        <script type="text/javascript" src="script/conversor.js"></script>
+    </head>
+    <header>
+        <img id=logo src="resources/banner.png" >
+    </header>
+    <body>
+        <form name=conversor>
+            <p><b>Introduzca la temperatura que desea convertir </b>
+                <input type=text onchange="calcular();" id=datos placeholder="nC o nF">
+                    <input type=button onclick="calcular();" value="convertir"><br>
+                    Su resultado convertido es : <input type=text id=resul>
+            </p>
+            <p>Si desea ver una tabla de las temperaturas mas frecuentes pulse <a href="tabla.html">aquí</a></p>
+        </form>
+        <form name=explicacion_breve>
+            <p>
+                <h1 id=ex>Grados Centígrados</h1>
+            El cero y el cien son las temperaturas de congelación y evaporación del agua y
+            constituyen el estándar del sistema métrico.<br><br>
+            <span>F =ºC * 1.8000 + 32.00</span>
+            </p>
+            <p>
+                <h1 id=ex>Grados Fahrenheit</h1>
+            Fahrenheit determinó 0ºF como la temperatura estabilizada cuando se mezclan
+            cantidades iguales de hielo, agua y sal.
+            Definió 96ºF como la temperatura media "cuando el termómetro
+            se sostiene en la boca o debajo de la axila de un ser humano humano
+            vivo y con buena salud".<br><br>
+            <span>C =ºF - (32/1.8000)</span>
+            </p>
+        </form>
+    </body>
+    <footer class="container">
+        <address>
+            Desarrollado por: Sawan J. Kapai Harpalani <a href="alu0100694765@ull.edu.es">alu0100694765@ull.edu.es</a><br>
+            Procesadores de Lenguajes, Universidad de La Laguna
+        </address>
+    </footer>
+</html>
